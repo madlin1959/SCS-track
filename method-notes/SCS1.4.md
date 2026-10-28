@@ -1,1 +1,1 @@
-SCS1.4 Git Method Note
+SCS1.4 Method Note
