@@ -13,7 +13,7 @@ Partner: ____. One person with more than the job needs, or "none" and why: ____.
 | The owner | Business reports and business settings | /Staff | Owners | super-admin | Needs to manage the business; extra access is unnecessary; owner decided. |
 | The accountant | Billing and financial records | /Staff | Accountants | none | Needs financial information; extra access risks other settings; owner decided. |
 | The shop manager | Manage shop work and staff | /Staff | Shop-Managers | none | Needs to organise shop work; extra access risks account settings; owner decided. |
-| Counter staff (four) | Serve customers and use the counter system | /Front Desk | Counter-Staff | none | Needs customer service tools; extra access risks private records; manager decided. |
-| The new starter | Basic counter work | /Front Desk | Counter-Staff | none | Needs basic work access; extra access is not needed; manager decided. |
+| Counter staff (four) | Serve customers and use the counter system | /Front Desk | madlin.yussuf@learninglions.org | none | Needs customer service tools; extra access risks private records; manager decided. |
+| The new starter | Basic counter work | /Front Desk | madlin.yussuf@learninglions.org | none | Needs basic work access; extra access is not needed; manager decided. |
 | Welders (three) | Workshop work information | /Workshop | Welders | none | Need workshop information; extra access risks business records; manager decided. |
 | Drivers (two) | Delivery and transport information | /Drivers | Drivers | none | Need delivery information; extra access risks other records; manager decided. |
