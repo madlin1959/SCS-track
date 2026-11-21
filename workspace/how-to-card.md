@@ -1,15 +1,27 @@
-# How-to card -- SCS3.1 (my own words, as the console was on the day)
+# SCS3.1 Admin How-to Card
 
-Six paths.  Write each one as the console showed it today, with ">" between the steps -- not as a tool said it.
+## User
+Admin Console > Directory > Users
 
-User:
-Group:
-Unit:
-Role:
-Reset:
-Rollback:
+## Group
+Admin Console > Directory > Groups
 
-## AI receipts
+## Unit
+Admin Console > Directory > Organizational units
 
-One line per AI look-up, each starting "AI receipt:" -- the tool, the date, what I asked, what it said, what the
-real console showed, what was different.  Never a user list, an address, a password or the domain name in the ask.
+## Role
+Admin Console > Account > Admin roles
+
+## Reset
+Admin Console > Directory > Users > Select user > Reset password
+
+## Rollback
+Admin Console > Directory > Users > Select user > Restore previous access
+
+## AI receipt:
+Tool: ChatGPT
+Date: 2026-11-21
+Ask: How can I document the admin console paths?
+Answer: Provided a template for recording the paths.
+What the console showed: NOT YET VERIFIED
+What was different: I do not have Admin Console access.
