@@ -25,3 +25,9 @@ Practice OU only.  Every row written before the click; the check column filled a
 
 | # | Time | What I am about to change (console path) | Who or what it affects | Why, in one line | How I checked it | Undo |
 |---|---|---|---|---|---|---|
+
+## Ticket 4 — Accountant Role Test (Three Attempts)
+
+1. **Reset password for a staff user in `/Trainees/madlin/Staff`:** Allowed — Admin Console opened the password reset screen and accepted a new password.
+2. **Create a new user or delete an existing user:** Blocked — the **Add new user** and **Delete user** actions were unavailable and navigating directly displayed *"You don't have permission to access this page."*
+3. **Open Billing or Account > Admin roles:** Blocked — **Billing** and **Admin roles** were hidden from the Admin Console menu and direct URLs returned *"You don't have permission"* (confirming role boundaries by testing rather than reading documentation).

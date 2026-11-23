@@ -1,0 +1,6 @@
+1. What I set out to do: [Your goal.]
+2. What I did in order: [Your steps.]
+3. What went wrong and how I fixed it: [Real problem and fix.]
+4. Time compared with my plan: [Actual time.]
+5. One lesson I learned: [Your lesson.]
+6. What I might be wrong about and how I would find out: [Your answer.]
