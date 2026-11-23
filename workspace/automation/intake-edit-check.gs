@@ -7,7 +7,7 @@ function checkstock() {
   const stockData = dashboard.getRange("A12:C15").getValues();
 
   // 2. Added the missing .filter() method
-  const lowstockItems = stockData.filter(row => row[2] === "reoder");
+  const lowstockItems = stockData.filter(row => row[2] === "REORDER");
 
   // 3. Fixed capitalization: getSheetByName
   let reminders = ss.getSheetByName("REMINDERS");
