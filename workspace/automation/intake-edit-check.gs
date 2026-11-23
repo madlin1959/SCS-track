@@ -1,33 +1,31 @@
-function onEdit(e) {
 // AI-assisted, directed by madlin
-  const sheet = e.range.getSheet();
+function checkstock() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const dashboard = ss.getSheetByName("DASHBOARD");
 
-  if (sheet.getName() !== "INTAKE") return;
+  // 1. Use getValues() (plural) to get a 2D array of the range
+  const stockData = dashboard.getRange("A12:C15").getValues();
 
-  const row = e.range.getRow();
-  const column = e.range.getColumn();
+  // 2. Added the missing .filter() method
+  const lowstockItems = stockData.filter(row => row[2] === "reoder");
 
-  if (row === 1 || column > 2) return;
-
-  const item = sheet.getRange(row, 1).getValue();
-  const quantity = sheet.getRange(row, 2).getValue();
-
-  if (item === "" || quantity === "") return;
-
-  const isValid = typeof quantity === "number" && quantity > 0;
-
-  const dateCell = sheet.getRange(row, 3);
-
-  if (dateCell.getValue() === "") {
-    dateCell.setValue(new Date());
-    dateCell.setNumberFormat("dd/MM/yyyy");
+  // 3. Fixed capitalization: getSheetByName
+  let reminders = ss.getSheetByName("REMINDERS");
+  if (!reminders) {
+    reminders = ss.insertSheet("REMINDERS");
   }
 
-  const checkCell = sheet.getRange(row, 4);
+  // 4. Fixed capitalization: clearContents
+  reminders.clearContents();
 
-  if (isValid) {
-    checkCell.setValue("OK");
-  } else {
-    checkCell.setValue("INVALID ENTRY");
+  // 5. Fixed capitalization (getRange, setValues), wrapped in a 2D array [[]],
+  // and combined "CURRENT" & "STOCK" into 3 headers to match A1:C1
+  reminders.getRange("A1:C1").setValues([
+    ["ITEMS", "CURRENT STOCK", "STATUS"]
+  ]);
+
+  if (lowstockItems.length > 0) {
+    // 6. Fixed capitalization: getRange and setValues
+    reminders.getRange(2, 1, lowstockItems.length, 3).setValues(lowstockItems);
   }
 }
