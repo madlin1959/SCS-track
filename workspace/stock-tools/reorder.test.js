@@ -34,3 +34,10 @@ test("formats the message", () => {
   assert.match(msg, /Building wholesaler:/);
   assert.match(msg, /Cement 50 kg: 5 left/);
 });
+
+test("includes items equal to reorder level", () => {
+  const rows = [{ Item: "Grinding discs 115 mm", Supplier: "Gas and welding supplier", "In stock": "20", "Reorder at": "20", Unit: "pieces" }];
+  const list = reorderList(rows);
+  const assert = require("node:assert");
+  assert.strictEqual(list.length, 1);
+});
