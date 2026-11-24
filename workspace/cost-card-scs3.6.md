@@ -13,5 +13,5 @@ Price, from the tier's own page, with the date read: 0 KSh on current tier (esti
 | Anything else | 150 | 200 | estimate | 0 |
 | Day total | 470 | 600 | estimate | 0 |
 
-Where the cost goes (the rates sheet line, or my own pocket, and for how long): Trainee pocket / current session allowance for SCS3.6 on 2026-11-24.
-If the skill or the agent job ran every week for the client, a month would cost: 0 KSh (estimate on current tier)
+Where the cost goes (the rates sheet line, or my own pocket, and for how long): Trainee pocket / current allowance on 2026-11-24.
+If the skill or the agent job ran every week for the client, a month would cost: 0 KSh (estimate)
