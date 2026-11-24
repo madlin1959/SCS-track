@@ -8,7 +8,7 @@ page you read and the date you read it.  One section per piece; add a new piece 
 
 ### Auth
 Looked for: Hardcoded keys, missing recipient validation, and unencrypted URLs in send-sms.js
-Found: Hardcoded API key LLDEMO-SMS-5c1e9a07d2b84f63, plain http gateway URL, and fallback OWNER-PHONE-NOT-SET
+Found: Hardcoded API key <redacted-demo-key>, plain http gateway URL, and fallback OWNER-PHONE-NOT-SET
 Evidence: Checked workspace/stock-tools/send-sms.js on 2026-11-24
 
 ### Edge cases
