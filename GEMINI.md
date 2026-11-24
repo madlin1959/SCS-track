@@ -1,9 +1,10 @@
 ## Stack
-- Node.js (v22.22.1) and JavaScript/CLI tools in ~/scs/projects/scs-track
+- Node.js v22.22.1 and JavaScript in workspace/stock-tools
 
 ## Tests
-- Run stock tool tests with Node before and after changes; verify against starting state
+- `cd workspace/stock-tools && node --test`
 
 ## Never
-- Never paste API keys, tokens, secrets, or client/staff/customer/money data into prompts or commits
-- Never edit main directly during patch or agent work; use dedicated branches
+- Never paste API keys, tokens, or secrets into prompts, commits, or code
+- Never put real client, staff, customer, money, or password data in the repo
+- Never edit main directly during patch or agent work
