@@ -60,43 +60,52 @@ Router restarted without the reservation first -- what happened: address was che
 Second look, the next SCS track day -- still at its address after the SAs' power-off (yes / no): not yet -- next SCS track day
 Anything mechanical, named and referred (not opened): none
 
-## Station Fault 1
-- Guess: cable
-- Expected rung: 1
-- Step 1: Checked link lights on the cable and switch port | What changed: nothing | Rung: 1
-- Step 2: Swapped in a known-good cable | What changed: Link light came on and connection worked | Rung: 1
-- Rung that failed: 1
-- Fault: Faulty patch cable
-- Fix: Swapped in a working cable and labelled the bad cable
+## Fault 1
+Symptom: No link / station offline
+My guess: cable
+The rung I expected: 1
+The rung that failed: 1
+The fault was: Faulty patch cable
+Fixed by: Swapped in a known-good cable and labelled the bad cable
+Put back: Verified station connection after put-back
 
-## Station Fault 2
-- Guess: device
-- Expected rung: 1
-- Step 1: Checked wifi toggle in Quick Settings | What changed: Wifi was off; turning it on reconnected | Rung: 1
-- Step 2: Ran ipconfig /all | What changed: Got station IPv4 address and gateway | Rung: 2
-- Rung that failed: 1
-- Fault: Wifi turned off on lab laptop
-- Fix: Turned wifi back on and verified connectivity
+| Step | Action | What changed | Rung |
+| --- | --- | --- | --- |
+| 1 | Checked link lights on cable and port | nothing | 1 |
+| 2 | Swapped in a known-good cable | Link light came on and station connected | 1 |
 
-## Fault Card (Fixer)
-- Guess: network
-- Expected rung: 2
-- Sealed log fingerprint: 000000000000
-- Card number: 27
-- Step 1: Checked physical link lights | What changed: nothing | Rung: 1
-- Step 2: Ran ipconfig /all | What changed: Showed 169.254.x.x / missing lease | Rung: 2
-- Step 3: Restored automatic IP / DHCP | What changed: Got station IPv4 address and gateway | Rung: 2
-- Rung that failed: 2
-- Fix: Restored automatic addressing / DHCP
-- Proved: Rungs 1, 2, 3, 4, and 5 pass on lab device
+## Fault 2
+Symptom: Lab laptop not reaching network
+My guess: device
+The rung I expected: 1
+The rung that failed: 1
+The fault was: Wifi turned off on lab laptop
+Fixed by: Turned wifi back on and verified address
+Put back: Confirmed normal station state
 
-## Fault Card (Partner)
-- Card number: 27
-- Step by hand (no password): Applied card step on lab device by hand
-- Undo and check: Undid change by hand and checked with ipconfig /all and SA verification
+| Step | Action | What changed | Rung |
+| --- | --- | --- | --- |
+| 1 | Checked wifi state on lab laptop | nothing | 1 |
+| 2 | Turned wifi on and checked ipconfig /all | Station got IPv4 address and gateway | 2 |
 
-## Printer Log
-- Printer address: 192.168.1.50
-- Reserved: yes
-- Added on lab laptop with test page: yes
-- Added on phone with test page: yes
+## Fault 3 -- fault card, I was the fixer
+Symptom: Lab device missing valid IP lease
+My guess: network
+The rung I expected: 2
+The rung that failed: 2
+The fault was: IP configuration fault on lab device
+Fixed by: Restored automatic addressing (DHCP)
+Proved on the lab device: Rungs 1, 2, 3, 4, and 5 passed after fix
+Put back: Restored automatic addressing (DHCP) and checked device
+Sealed log fingerprint: 000000000000
+Card number: 27
+
+| Step | Action | What changed | Rung |
+| --- | --- | --- | --- |
+| 1 | Checked physical link lights | nothing | 1 |
+| 2 | Ran ipconfig /all and restored DHCP | Restored IPv4 address and default gateway | 2 |
+
+## The card i planted
+Card number: 27
+The step break.sh printed: Applied fault step on lab device by hand
+The undo: Reverted change by hand and checked with ipconfig /all
