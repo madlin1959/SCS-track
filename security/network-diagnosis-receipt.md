@@ -1,14 +1,11 @@
 # AI diagnosis receipt -- SCS4.1
 
-One prompt, before the hands touch the kit, inside the five moves.  Nothing private in it: no router password,
-no client's name, no public address, no screenshot.  The hands follow the ladder, not the tool.
-
-Tool (and tier):
-Date:
-The fault it was for (Fault 1, 2 or 3 in the log):
-The prompt, word for word:
-Its order of checks (one line):
-Where it matched the ladder:
-The rung it skipped or invented:
-What my hands did instead, and why:
+Tool (and tier): [tool and tier]
+Date: 2026-11-24
+The fault it was for (Fault 1, 2 or 3 in the log): [Fault 1 | Fault 2 | Fault 3 / card]
+The prompt, word for word: [exact prompt]
+Its order of checks (one line): [checks in order]
+Where it matched the ladder: [where it matched]
+The rung it skipped or invented: [skipped/invented rung, or none -- it matched]
+What my hands did instead, and why: [what you did and why]
 Label: AI-assisted diagnosis, checked against the ladder
