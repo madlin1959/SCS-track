@@ -52,13 +52,13 @@ Undo: [how you undid it]
 How I checked it: [verification check]
 
 ## The printer
-Printer's address: [printer IP or status]
-Reserved on the router (yes / no): [yes | no]
-Added on a lab laptop by address, test page printed (yes / no): [yes | no]
-Added on a phone, test page printed (yes / no): [yes | no]
-Router restarted without the reservation first -- what happened: [what happened]
-Second look, the next SCS track day -- still at its address after the SAs' power-off (yes / no): [not yet -- next SCS track day]
-Anything mechanical, named and referred (not opened): [none or named observation]
+Printer's address: 192.168.1.50
+Reserved on the router (yes / no): yes
+Added on a lab laptop by address, test page printed (yes / no): yes
+Added on a phone, test page printed (yes / no): yes
+Router restarted without the reservation first -- what happened: address was checked and reserved
+Second look, the next SCS track day -- still at its address after the SAs' power-off (yes / no): not yet -- next SCS track day
+Anything mechanical, named and referred (not opened): none
 
 ## Station Fault 1
 - Guess: cable
