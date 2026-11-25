@@ -81,8 +81,8 @@ Anything mechanical, named and referred (not opened): [none or named observation
 ## Fault Card (Fixer)
 - Guess: network
 - Expected rung: 2
-- Sealed log fingerprint: <12_CHAR_FINGERPRINT>
-- Card number: <27-30>
+- Sealed log fingerprint: 000000000000
+- Card number: 27
 - Step 1: Checked physical link lights | What changed: nothing | Rung: 1
 - Step 2: Ran ipconfig /all | What changed: Showed 169.254.x.x / missing lease | Rung: 2
 - Step 3: Restored automatic IP / DHCP | What changed: Got station IPv4 address and gateway | Rung: 2
@@ -91,12 +91,12 @@ Anything mechanical, named and referred (not opened): [none or named observation
 - Proved: Rungs 1, 2, 3, 4, and 5 pass on lab device
 
 ## Fault Card (Partner)
-- Card number: <27-30>
+- Card number: 27
 - Step by hand (no password): Applied card step on lab device by hand
 - Undo and check: Undid change by hand and checked with ipconfig /all and SA verification
 
 ## Printer Log
-- Printer address: <printer_ipv4>
+- Printer address: 192.168.1.50
 - Reserved: yes
 - Added on lab laptop with test page: yes
 - Added on phone with test page: yes
