@@ -14,3 +14,7 @@ Firmware date seen on the router: [firmware date or version]
 6. [x] WPS off; remote admin from the internet off
 7. [ ] not done: checked during lab hardening review
 8. [x] Router restarted afterwards and the four numbers read again on a laptop -- still right
+Printer's address: 192.168.1.50
+Reserved on the router: yes
+Added on a lab laptop: yes
+Added on a phone: yes
